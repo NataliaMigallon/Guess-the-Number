@@ -1,5 +1,25 @@
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin: 7px;
     padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.wrapper__title {
+    font-family: "Open Sans", sans-serif;
+    color: grey;
+
+}
+.wrapper__text {
+    font-family: "Open Sans", sans-serif;
+    color: grey;
+}
+.input {
+    width: 300px;
+    height: 30px;
 }
