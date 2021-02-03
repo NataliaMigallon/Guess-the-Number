@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./main.css">
-</head>
-<body>
-    <div class="wrapper">
-        <h1 class="wrapper__title">Adivina el número</h1>
-        <p class="wrapper__text">Introduce aquí tu número:</p>
-        <label for="" class="label">
-            <input type="text" class="input js-input-mynumber">
-            <button class="button js-button" value="try">Prueba</button>
-        </label>
-        <label for="" class="label">
-            <input type="text" class="input" placeholder="Pista: escribe el número y dale a Prueba" >
-        </label>
-        <label for="" class="label">
-            <input type="text" class="input" placeholder="Número de intentos:">
-        </label>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adivina el número</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="wrapper__title">Adivina el número</h1>
+    </header>
+    <main>
+      <form action="">
+        <label for="userNumber">Introduce aquí tu número:</label>
+        <input type="number" class="js-number" id="userNumber" />
+        <input type="button" value="Prueba" class="js-button" />
+        <p class="js-tip">Pista: Escribe el número y dale a Prueba</p>
+        <input type="text" value="Número de intentos: 0" class="js-counter" />
+      </form>
+    </main>
     <script src="./main.js"></script>
-</body>
+  </body>
 </html>
