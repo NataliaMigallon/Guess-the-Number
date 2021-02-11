@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 7px;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.wrapper__title {
+  font-family: "Open Sans", sans-serif;
+  color: burlywood;
+  text-transform: uppercase;
+}
+.wrapper__text {
+  font-family: "Open Sans", sans-serif;
+  color: grey;
+}
+.input {
+  width: 300px;
+  height: 30px;
+}
+.checkNumber {
+  font-family: "Open Sans", sans-serif;
+  color: grey;
+}
+.clue {
+  font-family: "Open Sans", sans-serif;
+  color: grey;
+}
+.tries-counter {
+  font-family: "Open Sans", sans-serif;
+  color: grey;
+}
+.button {
+  border-style: none;
+  border-radius: 5px;
+  border: solid 3px grey;
+  background-color: burlywood;
+  width: 60px;
+  font-family: "Open Sans", sans-serif;
+}

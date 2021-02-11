@@ -40,7 +40,6 @@ function handleClickTestButton(event) {
   handleClickCounter();
 }
 const randomNumber = getRandomNumber(100);
-console.log(randomNumber);
 let triesCounter = 0;
 
 testButton.addEventListener("click", handleClickTestButton);

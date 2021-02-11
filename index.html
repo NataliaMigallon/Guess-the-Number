@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adivina el número</title>
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
     <header>
@@ -12,13 +12,24 @@
     </header>
     <main>
       <form action="">
-        <label for="userNumber">Introduce aquí tu número:</label>
-        <input type="number" class="js-number" id="userNumber" />
-        <input type="button" value="Prueba" class="js-button" />
-        <p class="js-tip">Pista: Escribe el número y dale a Prueba</p>
-        <input type="text" value="Número de intentos: 0" class="js-counter" />
+        <label for="userNumber" class="checkNumber"
+          >Introduce aquí tu número:</label
+        >
+        <input
+          type="number"
+          class="js-number"
+          id="userNumber"
+          placeholder="Introduce aquí tu número"
+        />
+        <input type="button" value="Prueba" class="button js-button" />
+        <p class="clue js-tip">Pista: Escribe el número y dale a Prueba</p>
+        <input
+          type="text"
+          value="Número de intentos: 0"
+          class="tries-counter js-counter"
+        />
       </form>
     </main>
-    <script src="./main.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
