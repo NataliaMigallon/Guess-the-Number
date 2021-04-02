@@ -10,7 +10,7 @@ function getRandomNumber(max) {
 }
 
 function renderTip(message) {
-  tipElement.innerHTML = "Pista: " + message;
+  tipElement.innerHTML = "Clue: " + message;
 }
 
 function checkNumber() {
@@ -18,21 +18,21 @@ function checkNumber() {
   const numberValue = parseInt(userNumberValue);
 
   if (isNaN(numberValue)) {
-    renderTip("El número debe estar entre 1 y 100");
+    renderTip("It must be a number between 1 and 100");
   } else if (numberValue < 1 || numberValue > 100) {
-    renderTip("El número debe estar entre 1 y 100");
+    renderTip("It must be a number between 1 and 100");
   } else if (numberValue > randomNumber) {
-    renderTip("Demasiado alto");
+    renderTip("Too high, try a lower number");
   } else if (numberValue < randomNumber) {
-    renderTip("Demasiado bajo");
+    renderTip("Too low, try a higher number");
   } else if (numberValue === randomNumber) {
-    renderTip("¡¡Has ganado!!");
+    renderTip("You're the winner!");
   }
 }
 
 function handleClickCounter() {
   triesCounter = triesCounter + 1;
-  counterInput.value = `Número de intentos: ${triesCounter}`;
+  counterInput.value = `Attempts: ${triesCounter}`;
 }
 
 function handleClickTestButton(event) {

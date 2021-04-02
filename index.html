@@ -3,31 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adivina el número</title>
-    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Guess the number</title>
+    <link rel="stylesheet" href="./stylesheet/main.css" />
   </head>
   <body>
     <header>
-      <h1 class="wrapper__title">Adivina el número</h1>
+      <h1 class="title">Guess the number. The Game</h1>
     </header>
     <main>
       <form action="">
-        <label for="userNumber" class="checkNumber"
-          >Introduce aquí tu número:</label
-        >
-        <input
-          type="number"
-          class="js-number"
-          id="userNumber"
-          placeholder="Introduce aquí tu número"
-        />
-        <input type="button" value="Prueba" class="button js-button" />
-        <p class="clue js-tip">Pista: Escribe el número y dale a Prueba</p>
-        <input
-          type="text"
-          value="Número de intentos: 0"
-          class="tries-counter js-counter"
-        />
+        <label class="checkNumber"
+          >Enter your number:
+          <input
+            type="text"
+            class="checkNumber__input js-number"
+            placeholder="Enter your number"
+            required
+          />
+        </label>
+        <label>
+          <input type="button" value="TRY" class="button js-button" />
+        </label>
+        <p class="clue js-tip">Clue: Enter your number and push "TRY"</p>
+        <label for="">
+          <input
+            type="text"
+            value="Attempts: 0"
+            class="tries-counter js-counter"
+          />
+        </label>
       </form>
     </main>
     <script src="./js/main.js"></script>
